@@ -12,9 +12,13 @@
 		E7702B8C2267ACC400D9EF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7702B8A2267ACC400D9EF61 /* Main.storyboard */; };
 		E7702B8E2267ACC600D9EF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7702B8D2267ACC600D9EF61 /* Assets.xcassets */; };
 		E7702B912267ACC600D9EF61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7702B8F2267ACC600D9EF61 /* LaunchScreen.storyboard */; };
+		F40C31C233BA8942DB4A5070 /* Pods_Phidgets_DigitalInput_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0416DF3966FA07476875F70 /* Pods_Phidgets_DigitalInput_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42FD997DF6D1C1E46AA312D3 /* Pods-Phidgets_DigitalInput_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phidgets_DigitalInput_Test.release.xcconfig"; path = "Target Support Files/Pods-Phidgets_DigitalInput_Test/Pods-Phidgets_DigitalInput_Test.release.xcconfig"; sourceTree = "<group>"; };
+		60954C6510DBA51E9D934671 /* Pods-Phidgets_DigitalInput_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phidgets_DigitalInput_Test.debug.xcconfig"; path = "Target Support Files/Pods-Phidgets_DigitalInput_Test/Pods-Phidgets_DigitalInput_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		C0416DF3966FA07476875F70 /* Pods_Phidgets_DigitalInput_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phidgets_DigitalInput_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7702B832267ACC400D9EF61 /* Phidgets_DigitalInput_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phidgets_DigitalInput_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7702B862267ACC400D9EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7702B882267ACC400D9EF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40C31C233BA8942DB4A5070 /* Pods_Phidgets_DigitalInput_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		447F5AF31AD013D46E7FEF60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60954C6510DBA51E9D934671 /* Pods-Phidgets_DigitalInput_Test.debug.xcconfig */,
+				42FD997DF6D1C1E46AA312D3 /* Pods-Phidgets_DigitalInput_Test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E7702B7A2267ACC400D9EF61 = {
 			isa = PBXGroup;
 			children = (
 				E7702B852267ACC400D9EF61 /* Phidgets_DigitalInput_Test */,
 				E7702B842267ACC400D9EF61 /* Products */,
+				447F5AF31AD013D46E7FEF60 /* Pods */,
+				E7DE8956CC2B425A31DF3F2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = Phidgets_DigitalInput_Test;
 			sourceTree = "<group>";
 		};
+		E7DE8956CC2B425A31DF3F2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0416DF3966FA07476875F70 /* Pods_Phidgets_DigitalInput_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7702B952267ACC600D9EF61 /* Build configuration list for PBXNativeTarget "Phidgets_DigitalInput_Test" */;
 			buildPhases = (
+				A20141A1161C2930C8EA7D24 /* [CP] Check Pods Manifest.lock */,
 				E7702B7F2267ACC400D9EF61 /* Sources */,
 				E7702B802267ACC400D9EF61 /* Frameworks */,
 				E7702B812267ACC400D9EF61 /* Resources */,
+				EBEC0005530988B05C6EB296 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A20141A1161C2930C8EA7D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Phidgets_DigitalInput_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBEC0005530988B05C6EB296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Phidgets_DigitalInput_Test/Pods-Phidgets_DigitalInput_Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Phidget22Swift/Phidget22Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Phidget22Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Phidgets_DigitalInput_Test/Pods-Phidgets_DigitalInput_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7702B7F2267ACC400D9EF61 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		E7702B962267ACC600D9EF61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60954C6510DBA51E9D934671 /* Pods-Phidgets_DigitalInput_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +372,7 @@
 		};
 		E7702B972267ACC600D9EF61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FD997DF6D1C1E46AA312D3 /* Pods-Phidgets_DigitalInput_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
